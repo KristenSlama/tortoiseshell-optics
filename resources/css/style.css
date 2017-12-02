@@ -102,7 +102,6 @@ nav {
   align-items: center;
   margin: 3rem auto;
   justify-content: center;
-
 }
 
 .service {
@@ -159,4 +158,120 @@ footer {
   flex-flow: row nowrap;
   align-items: flex-start;
   align-self: center;
+}
+
+/* Tablet Settings */
+@media only screen and (max-width: 1024px){
+   html, body, header, nav, main, footer {
+     width: 100%;
+   }
+
+   header {
+     height: 22rem;
+   }
+
+   #banner {
+     top: 5rem;
+     left: 6rem;
+     padding: 0.75rem 4rem;
+     font-size: 1.33rem;
+   }
+
+   .logo img {
+     padding-left: 1rem;
+   }
+
+   nav {
+     top: 0;
+   }
+
+   footer {
+     padding: 4rem 0;
+   }
+ }
+
+@media only screen and (max-width: 480px) {
+  header {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  #company, #site-nav, #copyright {
+    display: none;
+  }
+
+  nav {
+    height: 2.5rem;
+    width: 100%;
+    padding: 0;
+  }
+
+  #mobile-nav {
+    display: block;
+    margin-right: 2rem;
+  }
+
+  #banner {
+    top: 9rem;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  #services {
+    flex-flow: column nowrap;
+    height: auto;
+    justify-content: space-between;
+    margin: 3.77rem auto;
+    padding: 0;
+  }
+
+  .service {
+    padding-bottom: 1.54rem;
+    margin: 0;
+    height: auto;
+    flex-flow: column nowrap;
+    font-size: 0.77rem;
+    justify-content: flex-start;
+    align-self: center;
+  }
+
+  .service img {
+    margin-bottom: 1rem;
+  }
+
+  #info {
+    flex-flow: column nowrap;
+  }
+
+  .info-item {
+    flex-flow: column nowrap;
+    width: 100%;
+    margin-bottom: 4rem;
+    font-size: 0.77rem;
+  }
+
+  .info-item span {
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 0.25rem;
+    text-align: center;
+  }
+
+  .info-item p {
+    padding: 0 2rem;
+  }
+
+  footer .logo {
+    justify-content: center;
+  }
+
+  footer {
+    padding: 2rem 0;
+  }
+
 }
